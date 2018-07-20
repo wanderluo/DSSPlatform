@@ -1,0 +1,139 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.register_account{
+    border-top:1px solid #ddd;
+    padding:2% 0;
+}
+.register_account table td {
+    width: 100%;
+}
+.register_account form input[type="text"],.register_account form input[type="password"], .register_account form select {
+    font-size:0.95em;
+    color:#777;
+    padding: 8px;
+    outline: none;
+    margin:10px 0;
+    width:91%;
+    font-family: 'Exo 2', sans-serif;
+    border:none;
+    box-shadow:0 0 2px #aaa;
+    -webkit-box-shadow:0 0 2px #aaa;
+    -moz-box-shadow:0 0 2px #aaa;
+    -o-box-shadow:0 0 2px #aaa;
+}
+.register_account form input[type="text"]:hover,.register_account form input[type="password"]:hover, .register_account form select:hover {
+    box-shadow:0 0 4px #aaa;
+    -webkit-box-shadow:0 0 4px #aaa;
+    -moz-box-shadow:0 0 4px #aaa;
+    -o-box-shadow:0 0 4px #aaa;
+}
+.register_account form input[type="text"].code {
+    width: 15%;
+}
+.register_account form input[type="text"].number {
+    width: 69.8%;
+}
+p.terms a, p.note a {
+    text-decoration: underline;
+    color:#555;
+}
+p.terms {
+    float: left;
+    font-size: 12px;
+    padding: 15px 0 0 15px;
+}
+button.grey{
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    background: #555;
+    font-size:0.95em;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding:10px 30px;
+    color: #FFF;
+    border: none;
+    float: left;
+    font-family: 'Exo 2', sans-serif;
+    outline:none;
+}
+
+button.grey:hover {
+    background:#4CB1CA;
+    color: #FFF;
+}
+
+button.disabled{
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    background: #555;
+    font-size:0.95em;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding:10px 30px;
+    color: #FFF;
+    border: none;
+    float: left;
+    font-family: 'Exo 2', sans-serif;
+    outline:none;
+}
+
+button.enable{
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    background:#4CB1CA;
+    color: #FFF;
+    font-size:0.95em;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding:10px 30px;
+    border: none;
+    float: left;
+    font-family: 'Exo 2', sans-serif;
+    outline:none;
+}
+
+button.default{
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    background:#4CB1CA;
+    font-size:0.95em;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding:8px 15px;
+    color: #FFF;
+    border: none;
+    font-family: 'Exo 2', sans-serif;
+    outline:none;
+}
+button.default[disabled]{
+    background:#999999;
+}
+button.default:hover {
+    background:#4CB1CA;
+    color: #FFF;
+}
+
+.register_account form input[type="text"].code {
+    width: 15%;
+}
+p.code{
+    color:#777;
+}
+p.cart{
+    color:#777;
+    font-size:0.85em;
+    line-height:1.8em;
+}
+p.cart a{
+    text-decoration:underline;
+    /*color:#000;*/
+}
+p.cart a:hover{
+    text-decoration:none;
+}

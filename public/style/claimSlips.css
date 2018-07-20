@@ -1,0 +1,11 @@
+/**
+ * @author huhuan
+ * @date 2018/3/1
+ * @Description: 新表格样式
+*/
+.order-box{
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    background: pink;
+}

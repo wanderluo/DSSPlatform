@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0042)flipin.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>自动化脚本</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
+    <link href="css/toastr.min.css" rel="stylesheet" type="text/css">
+    <link href="css/demo.css" rel="stylesheet" type="text/css">
+    <!--Framework-->
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/toastr.min.js"></script>
+    <script src="js/jquery.easyui.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <script src="js/common.js"></script>
+    <!--End Framework-->
+    <!--<script src="js/jquery.ffform.js" type="text/javascript"></script>-->
+    <script src="js/datepicker/WdatePicker.js"></script>
+    <script src="js/autolayer.js"></script>
+
+</head>
+<body>
+    <section id="getintouch" >
+        <div class="container" style="border-bottom: 0;">
+            <h1>
+                <span>订单自动化生成</span>
+            </h1>
+        </div>
+        <div class="container">
+            <form class="contact" id="form">
+
+                <div class="row clearfix">
+                    <label>采集时间</label><br/>
+                    <input style="width:46%" data-required="true" type="text" id="paroduceSTime" name="stime" class="Wdate half" onfocus="onInputFocus(this);WdatePicker({dateFmt:'yyyyMMdd',readOnly:true,maxDate:'#F{$dp.$D(\'paroduceETime\')}'})" onblur="onInputBlur(this)">
+                    <span style="display:inline-block;width:6%;text-align: center">至</span>
+                    <input style="width:46%" data-required="true" type="text" id="paroduceETime"  name="etime" class="Wdate half" onfocus="onInputFocus(this);WdatePicker({dateFmt:'yyyyMMdd',readOnly:true,minDate:'#F{$dp.$D(\'paroduceSTime\')}',startDate:'#F{$dp.$D(\'paroduceSTime\')}'})" onblur="onInputBlur(this)">
+                </div>
+                <!--<div class="row clearfix">-->
+                    <!--<div class="lbl">-->
+                        <!--<label for="cookie">-->
+                            <!--Cookie</label>-->
+                    <!--</div>-->
+                    <!--<div class="ctrl">-->
+                        <!--<input type="text" id="cookie" name="cookie" data-required="true" data-validation="text"-->
+                               <!--data-msg="" placeholder="">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="row clearfix">-->
+                    <!--<div class="lbl">-->
+                        <!--<label for="ordername">-->
+                            <!--订单名称</label>-->
+                    <!--</div>-->
+                    <!--<div class="ctrl">-->
+                        <!--<input type="text" id="ordername" name="ordername" data-required="true" data-validation="text"-->
+                               <!--data-msg="" placeholder="">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <div class="row clearfix">
+                <div class="lbl">
+                <label for="remark">
+                    订单备注</label>
+                </div>
+                <div class="ctrl">
+                <textarea id="remark" name="remark" rows="6" cols="10"></textarea>
+                </div>
+                </div>
+                <div class="row  clearfix">
+                <div class="span10 offset2">
+                <input type="button" name="submit" id="submit" class="submit" value="Send Message">
+                </div>
+                </div>
+            </form>
+
+            <!--<div class="alert alert-warning hidden" role="alert">-->
+                <!--<strong>Warning!</strong> Better check yourself, you're not looking too good.-->
+            <!--</div>-->
+
+
+            <!--<div  class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">-->
+                <!--<div class="modal-dialog modal-sm" role="document">-->
+                    <!--<div class="modal-content">-->
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title">订单生成</h4>
+                        </div>
+                        <div class="modal-body">
+
+                        </div>
+
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+        </div>
+    </section>
+</body>
+</html>
