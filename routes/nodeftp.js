@@ -70,15 +70,14 @@ function getcookie(){
 // 进入页面
     await page.goto('http://218.247.138.119:7777/DSSPlatform/shirologin.html');
 
-// 点击搜索框拟人输入
-    const username = 'zhanggwhu';
-    const password = 'hbgf@whu2014';
+// 点击搜索框
+    const username = 'username';
+    const password = 'password';
     const lala = '';
     await page.type('#username', username, {delay: 0});
     await page.type('#password', password, {delay: 0});
     await page.type('#validatecode', lala, {delay: 0});
 
-// 回车
     await page.keyboard.press('Enter');
 
     const page1 = await browser.newPage();
@@ -95,7 +94,7 @@ function getcookie(){
     let inputElement = await page.$('#validatecode');
 
     await page.type('#validatecode', num, {delay: 0});
-// 回车
+
     await page.keyboard.press('Enter');
 
     var cookies = await page.cookies('http://218.247.138.119:7777/DSSPlatform/orderinfo/orderform.html?method=query');
@@ -255,15 +254,11 @@ function callFunction(){
 // callFunction();
 
 router.get('/ftp',function(req, res){
-    // var connectionProperties = {
-    //     host: "218.247.138.118",
-    //     user: "zhanggwhu",
-    //     password: "hbgf@whu2014"
-    // };
+    
     var connectionProperties = {
         host: "218.247.138.123",
-        user: "zhanggwhu",
-        password: "hbgf@whu2014"
+        user: "root",
+        password: "******"
     };
     var db = req.app.locals.db;
     db.driver.execQuery("SELECT * FROM rsdata WHERE state is null;",function(err,results){
