@@ -20,7 +20,7 @@
     "iconv-lite": "^0.4.21",
     "morgan": "~1.6.1",
     "nodemailer": "^4.6.5",
-    "puppeteer": "^1.4.0",
+    "puppeteer": "^1.13.0",
     "serve-favicon": "~2.3.0",
     "shp": "0.0.1"
   },
