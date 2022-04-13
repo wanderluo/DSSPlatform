@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "adm-zip": "^0.4.9",
-    "async": "^2.6.0",
+    "async": "^3.2.2",
     "body-parser": "~1.13.2",
     "cheerio": "^1.0.0-rc.2",
     "compressing": "^1.2.3",
