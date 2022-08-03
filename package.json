@@ -30,7 +30,7 @@
     "compression": "^1.6.2",
     "express-session": "^1.14.2",
     "multiparty": "^4.1.2",
-    "mysql": "^2.12.0",
+    "mysql": "^2.14.0",
     "orm": "^3.2.0",
     "orm-transaction": "0.0.2",
     "tar": "^2.2.1",
